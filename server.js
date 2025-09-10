@@ -8,9 +8,14 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(express.static('public')); // Serve static files
 
-// Fallback to index.html for root
+// Serve index.html for root
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Serve pashto.html for Pashto route
+app.get('/pashto.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'pashto.html'));
 });
 
 const db = new sqlite3.Database('database.db', (err) => {
