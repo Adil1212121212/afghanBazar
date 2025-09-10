@@ -1,0 +1,1 @@
+console.log('Afghan Bazart categories script loaded');
