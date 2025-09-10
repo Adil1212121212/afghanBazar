@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static('public')); // Serve static files from 'public' folder
 
 const db = new sqlite3.Database('database.db', (err) => {
   if (err) console.error('Database error:', err.message);
@@ -31,6 +31,11 @@ app.get('/products', (req, res) => {
     if (err) return res.status(500).json({ error: err.message });
     res.json(rows);
   });
+});
+
+// Fallback to serve index.html for root route
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
