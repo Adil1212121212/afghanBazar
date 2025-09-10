@@ -1,19 +1,19 @@
 body {
   font-family: 'Georgia', serif;
-  background-color: #f5f5f5; /* Light gray background for contrast */
-  color: #333; /* Dark text for readability */
+  background-color: #f5f5f5; /* Light gray */
+  color: #333; /* Dark text */
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
 header {
-  background-color: #1a2b4a; /* Rich dark blue */
-  color: #ffd700; /* Bright gold */
+  background-color: #1a2b4a; /* Dark blue */
+  color: #ffd700; /* Gold */
   padding: 20px;
   text-align: center;
-  border-bottom: 5px solid #ffd700; /* Gold border for emphasis */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-bottom: 5px solid #ffd700;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -21,87 +21,59 @@ h1 {
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 2px; /* Adds elegance */
+  letter-spacing: 2px;
 }
 
 nav a {
-  color: #ffd700; /* Gold links */
+  color: #ffd700;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 15px; /* Consistent spacing */
-  transition: color 0.3s ease; /* Smooth hover effect */
+  margin: 0 15px;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
+  color: #fff;
   text-decoration: underline;
-  color: #fff; /* White on hover for contrast */
 }
 
 main {
-  max-width: 900px; /* Slightly wider for content */
+  max-width: 900px;
   margin: 30px auto;
   padding: 25px;
-  background-color: #ffffff; /* Pure white background */
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  color: #1a2b4a; /* Dark blue headings */
+  color: #1a2b4a;
   text-align: center;
   margin-bottom: 20px;
-  border-bottom: 2px solid #ffd700; /* Gold underline */
+  border-bottom: 2px solid #ffd700;
   padding-bottom: 10px;
 }
 
 p {
   font-size: 1.2em;
-  color: #555; /* Medium gray for text */
+  color: #555;
   text-align: center;
   margin-bottom: 15px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  color: #1a2b4a; /* Dark blue labels */
+a {
+  color: #1a2b4a;
+  text-decoration: none;
   font-weight: bold;
-}
-
-input, select, textarea, button {
-  padding: 10px;
-  margin-top: 5px;
-  border: 2px solid #1a2b4a; /* Dark blue border */
+  background-color: #ffd700;
+  padding: 10px 20px;
   border-radius: 5px;
-  font-size: 1em;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-input:focus, select:focus, textarea:focus {
-  border-color: #ffd700; /* Gold focus outline */
-  outline: none;
-}
-
-button {
-  background-color: #ffd700; /* Gold button */
-  color: #1a2b4a; /* Dark blue text */
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  padding: 12px;
-}
-
-button:hover {
-  background-color: #e6c200; /* Slightly darker gold on hover */
-  color: #fff; /* White text on hover */
+a:hover {
+  background-color: #e6c200;
+  color: #fff;
 }
 
 html[dir="rtl"] main {
@@ -111,34 +83,4 @@ html[dir="rtl"] main {
 html[dir="rtl"] nav a {
   margin-left: 0;
   margin-right: 15px;
-}
-
-#category-list, #cart-items {
-  list-style: none;
-  padding: 0;
-}
-
-#category-list li, #cart-items li {
-  padding: 15px;
-  border-bottom: 1px solid #ddd;
-  background-color: #f9f9f9; /* Light gray background for items */
-  margin-bottom: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-#category-list li:hover, #cart-items li:hover {
-  background-color: #eef2f7; /* Lighter hover effect */
-}
-
-#total {
-  font-size: 1.5em;
-  color: #1a2b4a;
-  font-weight: bold;
-}
-
-#checkout {
-  margin-top: 20px;
-  width: 200px;
-  align-self: center;
 }
