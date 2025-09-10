@@ -1,7 +1,7 @@
 {
   "name": "afghan-bazart",
   "version": "1.0.0",
-  "description": "A learning project for an e-commerce platform with bilingual support (English and Pashto)",
+  "description": "A world-class e-commerce platform with bilingual support (English and Pashto)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,8 +9,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "sqlite3": "^5.0.0",
-    "body-parser": "^1.19.0"
+    "body-parser": "^1.19.0",
+    "express-session": "^1.17.3",
+    "bcrypt": "^5.1.0"
   },
-  "author": "Your Name",
+  "author": "Adil1212121212",
   "license": "MIT"
 }

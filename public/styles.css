@@ -55,7 +55,35 @@ p {
   text-align: center;
 }
 
-/* RTL adjustments for Pashto */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, textarea, button {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #1a2b4a;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #ffd700;
+  color: #1a2b4a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6c200;
+}
+
 html[dir="rtl"] main {
   text-align: right;
 }
@@ -63,4 +91,14 @@ html[dir="rtl"] main {
 html[dir="rtl"] nav a {
   margin-left: 0;
   margin-right: 15px;
+}
+
+#category-list, #cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#category-list li, #cart-items li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
